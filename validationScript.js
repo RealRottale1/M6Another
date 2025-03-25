@@ -15,7 +15,7 @@ const myForm = document.getElementById("myForm")
 const submitButton = document.getElementById("submit")
 const inputBox = document.getElementById("inputField")
 
-submitButton.addEventListener("click", function(event) {
+submitButton.addEventListener("click", function() {
   if (/^[a-zA-Z0-9]+$/.test(inputBox.value)) {
     inputBox.setCustomValidity("")
     alert(`"${inputBox.value}" is valid!`)
